@@ -1,4 +1,9 @@
-import { defineConfig } from 'unocss';
+import {
+  defineConfig,
+  presetAttributify,
+  presetUno,
+  transformerVariantGroup,
+} from 'unocss';
 
 const shadcnUiColors = {
   accent: {
@@ -94,12 +99,21 @@ const customColors = {
 };
 
 export default defineConfig({
-  include: [
-    './index.html',
-    '**/*.{vue,js,ts,jsx,tsx}',
-    '../packages/components/**/*.{vue,js,ts,jsx,tsx}',
-  ],
+  content: {
+    pipeline: {
+      include: [
+        './index.html',
+        'src/**/*.{vue,js,ts,jsx,tsx}',
+        '../packages/components/**/*.{vue,js,ts,jsx,tsx}',
+      ],
+    },
+  },
+  presets: [presetUno(), presetAttributify()],
   theme: {
+    colors: {
+      ...customColors,
+      ...shadcnUiColors,
+    },
     container: {
       center: true,
       padding: '2rem',
@@ -115,7 +129,6 @@ export default defineConfig({
         'collapsible-up': 'collapsible-up 0.2s ease-in-out',
         float: 'float 5s linear 0ms infinite',
       },
-
       animationDuration: {
         '2000': '2000ms',
         '3000': '3000ms',
@@ -130,10 +143,6 @@ export default defineConfig({
         float: `0 6px 16px 0 rgb(0 0 0 / 8%),
           0 3px 6px -4px rgb(0 0 0 / 12%),
           0 9px 28px 8px rgb(0 0 0 / 5%)`,
-      },
-      colors: {
-        ...customColors,
-        ...shadcnUiColors,
       },
       fontFamily: {
         sans: [
@@ -170,6 +179,7 @@ export default defineConfig({
       },
     },
   },
+  transformers: [transformerVariantGroup()],
 });
 
 function createColorsPalette(name: string) {

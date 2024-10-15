@@ -5,8 +5,8 @@ import { computed } from 'vue';
 
 import { Primitive } from 'radix-vue';
 
-// import { LoaderCircle } from '@vben-core/icons';
 import { cn } from '../../../utils';
+import { LoaderCircle } from '../../icon';
 import { buttonVariants } from './button';
 
 interface Props extends EoButtonProps {}
@@ -32,10 +32,10 @@ const isDisabled = computed(() => {
     :class="cn(buttonVariants({ variant, size }), props.class)"
     :disabled="isDisabled"
   >
-    <!-- <LoaderCircle
+    <LoaderCircle
       v-if="loading"
       class="text-md mr-2 size-4 flex-shrink-0 animate-spin"
-    /> -->
+    />
     <slot></slot>
   </Primitive>
 </template>
