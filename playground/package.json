@@ -13,6 +13,8 @@
     "vue": "^3.5.10"
   },
   "devDependencies": {
+    "@echone-ui/components": "workspace:*",
+    "@echone-ui/unocss-config": "workspace:*",
     "@vitejs/plugin-vue": "^5.1.4",
     "typescript": "^5.5.3",
     "unocss": "^0.63.4",

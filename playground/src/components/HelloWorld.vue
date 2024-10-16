@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 
-import EoButton from '../../../packages/components/button';
+import { EoButton } from '@echone-ui/components';
 
 defineProps<{ msg: string }>();
 

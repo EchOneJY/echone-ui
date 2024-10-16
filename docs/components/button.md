@@ -1,12 +1,9 @@
-<script setup lang="ts">
-import { EoButton } from '@echone-ui/components';
+# Button 按钮
 
-import HelloWorld from './components/HelloWorld.vue';
-</script>
 
-<template>
-  <div class="border"></div>
-  <HelloWorld msg="" />
+ <EoButton loading> 123 </EoButton>
+
+```html
   <EoButton disabled> test </EoButton>
   <EoButton size="lg"> test </EoButton>
   <EoButton variant="destructive"> test </EoButton>
@@ -14,4 +11,4 @@ import HelloWorld from './components/HelloWorld.vue';
   <EoButton variant="link"> test </EoButton>
   <EoButton loading> test </EoButton>
   <EoButton variant="outline"> test </EoButton>
-</template>
+  ```

@@ -1,8 +1,4 @@
 {
-  "name": "echone-ui",
-  "version": "0.0.0",
-  "private": true,
-  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
@@ -10,8 +6,12 @@
     "test:unit": "vitest run --dom"
   },
   "devDependencies": {
+    "@echone-ui/components": "workspace:*",
     "@echone-ui/eslint-config": "workspace:*",
     "@echone-ui/prettier-config": "workspace:*",
+    "@echone-ui/tsconfig": "workspace:*",
+    "@echone-ui/unocss-config": "workspace:^",
+    "@types/node": "^22.7.5",
     "@vitejs/plugin-vue": "^5.1.4",
     "@vitejs/plugin-vue-jsx": "^4.0.1",
     "@vue/test-utils": "^2.4.6",

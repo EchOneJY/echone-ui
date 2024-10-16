@@ -1,22 +1,19 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Base",
   "compilerOptions": {
     "composite": false,
     "target": "ESNext",
 
-    "jsx": "preserve",
-    // "jsxImportSource": "vue",
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "moduleDetection": "force",
-    "useDefineForClassFields": true,
     "experimentalDecorators": true,
 
     "baseUrl": ".",
     "module": "ESNext",
 
-    "moduleResolution": "bundler",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
 
-    "types": ["vite/client"],
     "strict": true,
     "strictNullChecks": true,
     "noFallthroughCasesInSwitch": true,
@@ -27,7 +24,6 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
 
-    "declaration": false,
     "inlineSources": false,
     "noEmit": true,
     "removeComments": true,
@@ -40,5 +36,5 @@
     "skipLibCheck": true,
     "preserveWatchOutput": true
   },
-  "exclude": ["**/dist/**", "**/node_modules/**"]
+  "exclude": ["**/node_modules/**", "**/dist/**", "**/.turbo/**"]
 }
