@@ -1,5 +1,5 @@
 {
-  "name": "@echone-ui/components",
+  "name": "@echone-ui/utils",
   "version": "1.0.0",
   "license": "MIT",
   "type": "module",
@@ -16,13 +16,11 @@
     }
   },
   "dependencies": {
-    "@echone-ui/utils": "workspace:*",
+    "@manypkg/get-packages": "^2.2.2",
     "@vue/shared": "^3.5.12",
-    "@vueuse/core": "^11.1.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "lucide-vue-next": "^0.453.0",
-    "radix-vue": "^1.9.7",
+    "find-up": "^7.0.0",
     "tailwind-merge": "^2.5.3",
     "vue": "^3.5.10"
   }

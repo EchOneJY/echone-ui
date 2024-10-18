@@ -1,5 +1,12 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": "@echone-ui/tsconfig/node.json",
+  "extends": "@echone-ui/tsconfig/web.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@echone-ui/components": ["./src"]
+    }
+  },
+  "include": ["src"],
   "exclude": ["node_modules"]
 }

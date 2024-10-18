@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { EoButton } from '@echone-ui/components';
+import { Button as EoButton } from '@echone-ui/components';
 
 import HelloWorld from './components/HelloWorld.vue';
 </script>
