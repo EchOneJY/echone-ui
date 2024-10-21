@@ -23,9 +23,6 @@ importers:
       '@echone-ui/tsconfig':
         specifier: workspace:*
         version: link:internal/tsconfig
-      '@echone-ui/utils':
-        specifier: workspace:*
-        version: link:packages/utils
       '@types/node':
         specifier: ^22.7.5
         version: 22.7.5
@@ -61,13 +58,11 @@ importers:
         version: 2.1.6(typescript@5.6.3)
 
   docs:
-    devDependencies:
-      '@echone-ui/unocss-config':
+    dependencies:
+      '@echone-ui/components':
         specifier: workspace:*
-        version: link:../internal/unocss-config
-      unocss:
-        specifier: ^0.63.4
-        version: 0.63.4(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@22.7.5))
+        version: link:../packages/components
+    devDependencies:
       vitepress:
         specifier: ^1.4.1
         version: 1.4.1(@algolia/client-search@4.24.0)(@types/node@22.7.5)(postcss@8.4.47)(search-insights@2.17.2)(typescript@5.6.3)
@@ -145,6 +140,15 @@ importers:
         specifier: ^9.4.3
         version: 9.4.3(eslint@9.12.0(jiti@2.3.3))
 
+  internal/node-utils:
+    dependencies:
+      '@manypkg/get-packages':
+        specifier: ^2.2.2
+        version: 2.2.2
+      find-up:
+        specifier: ^7.0.0
+        version: 7.0.0
+
   internal/prettier-config:
     dependencies:
       prettier:
@@ -190,6 +194,9 @@ importers:
         specifier: ^1.0.7
         version: 1.0.7(tailwindcss@3.4.14)
     devDependencies:
+      '@echone-ui/node-utils':
+        specifier: workspace:*
+        version: link:../node-utils
       '@echone-ui/utils':
         specifier: workspace:*
         version: link:../../packages/utils
@@ -207,6 +214,9 @@ importers:
 
   packages/components:
     dependencies:
+      '@echone-ui/icons':
+        specifier: workspace:^
+        version: link:../icons
       '@echone-ui/utils':
         specifier: workspace:*
         version: link:../utils
@@ -231,6 +241,18 @@ importers:
       tailwind-merge:
         specifier: ^2.5.3
         version: 2.5.4
+      vue:
+        specifier: ^3.5.10
+        version: 3.5.12(typescript@5.6.3)
+
+  packages/icons:
+    dependencies:
+      '@iconify/vue':
+        specifier: ^4.1.2
+        version: 4.1.2(vue@3.5.12(typescript@5.6.3))
+      lucide-vue-next:
+        specifier: ^0.453.0
+        version: 0.453.0(vue@3.5.12(typescript@5.6.3))
       vue:
         specifier: ^3.5.10
         version: 3.5.12(typescript@5.6.3)
@@ -261,28 +283,19 @@ importers:
 
   playground:
     dependencies:
-      '@unocss/reset':
-        specifier: ^0.63.4
-        version: 0.63.4
+      '@echone-ui/components':
+        specifier: workspace:*
+        version: link:../packages/components
       vue:
         specifier: ^3.5.10
         version: 3.5.12(typescript@5.6.3)
     devDependencies:
-      '@echone-ui/components':
-        specifier: workspace:*
-        version: link:../packages/components
-      '@echone-ui/unocss-config':
-        specifier: workspace:*
-        version: link:../internal/unocss-config
       '@vitejs/plugin-vue':
         specifier: ^5.1.4
         version: 5.1.4(vite@5.4.8(@types/node@22.7.5))(vue@3.5.12(typescript@5.6.3))
       typescript:
         specifier: ^5.5.3
         version: 5.6.3
-      unocss:
-        specifier: ^0.63.4
-        version: 0.63.4(postcss@8.4.47)(rollup@4.24.0)(vite@5.4.8(@types/node@22.7.5))
       vite:
         specifier: ^5.4.8
         version: 5.4.8(@types/node@22.7.5)
@@ -1397,6 +1410,11 @@ packages:
 
   '@iconify/utils@2.1.33':
     resolution: {integrity: sha512-jP9h6v/g0BIZx0p7XGJJVtkVnydtbgTgt9mVNcGDYwaa7UhdHdI9dvoq+gKj9sijMSJKxUPEG2JyjsgXjxL7Kw==}
+
+  '@iconify/vue@4.1.2':
+    resolution: {integrity: sha512-CQnYqLiQD5LOAaXhBrmj1mdL2/NCJvwcC4jtW2Z8ukhThiFkLDkutarTOV2trfc9EXqUqRs0KqXOL9pZ/IyysA==}
+    peerDependencies:
+      vue: '>=3'
 
   '@internationalized/date@3.5.6':
     resolution: {integrity: sha512-jLxQjefH9VI5P9UQuqB6qNKnvFt1Ky1TPIzHGsIlCi7sZZoMR8SdYbBGRvM0y+Jtb+ez4ieBzmiAUcpmPYpyOw==}
@@ -5346,6 +5364,11 @@ snapshots:
       mlly: 1.7.2
     transitivePeerDependencies:
       - supports-color
+
+  '@iconify/vue@4.1.2(vue@3.5.12(typescript@5.6.3))':
+    dependencies:
+      '@iconify/types': 2.0.0
+      vue: 3.5.12(typescript@5.6.3)
 
   '@internationalized/date@3.5.6':
     dependencies:

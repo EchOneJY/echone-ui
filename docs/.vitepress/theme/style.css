@@ -1,4 +1,6 @@
-@import url(@unocss/reset/tailwind-compat.css);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
     --font-family: -apple-system, blinkmacsystemfont, 'Segoe UI', roboto,

@@ -51,6 +51,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@echone-ui/node-utils": "workspace:*",
     "@echone-ui/utils": "workspace:*",
     "@types/postcss-import": "^14.0.3"
   }

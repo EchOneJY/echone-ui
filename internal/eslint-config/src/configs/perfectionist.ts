@@ -19,11 +19,11 @@ export async function perfectionist(): Promise<Linter.Config[]> {
           {
             customGroups: {
               type: {
-                echone: 'echone',
+                'echone-ui': 'echone-ui',
                 vue: 'vue',
               },
               value: {
-                echone: ['@echone*', '@echone/**/**', '@echone-core/**/**'],
+                'echone-ui': ['@echone-ui*', '@echone-ui/**/**'],
                 vue: ['vue', 'vue-*', '@vue*'],
               },
             },
@@ -33,7 +33,7 @@ export async function perfectionist(): Promise<Linter.Config[]> {
               ['internal-type'],
               'builtin',
               'vue',
-              'echone',
+              'echone-ui',
               'external',
               'internal',
               ['parent', 'sibling', 'index'],

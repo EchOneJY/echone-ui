@@ -2,7 +2,8 @@ import type { Config } from 'tailwindcss';
 
 import path from 'node:path';
 
-import { getPackagesSync } from '@echone-ui/utils';
+import { getPackagesSync } from '@echone-ui/node-utils';
+
 import { addDynamicIconSelectors } from '@iconify/tailwind';
 import typographyPlugin from '@tailwindcss/typography';
 import animate from 'tailwindcss-animate';

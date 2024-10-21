@@ -1,37 +1,31 @@
 import { defineConfig } from 'vitepress';
-import UnoCSS from 'unocss/vite';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Echone UI",
-  description: "The Atomic UI Library",
-  vite: {
- plugins: [UnoCSS()],
-  },
+  description: 'The Atomic UI Library',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/' },
+      { link: '/', text: 'Home' },
       {
-        text: '基础组件',
         activeMatch: '^/components/',
-        link: '/components/button'
+        link: '/components/button',
+        text: '基础组件',
       },
     ],
 
     sidebar: {
-        '/components/': [
-            {
-                text: '基础组件',
-                items: [
-                  { text: 'Button 按钮', link: '/components/button' },
-                ]
-            }
-        ]
+      '/components/': [
+        {
+          text: '基础组件',
+          items: [{ link: '/components/button', text: 'Button 按钮' }],
+        },
+      ],
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
-  }
-})
+      { icon: 'github', link: 'https://github.com/vuejs/vitepress' },
+    ],
+  },
+  title: 'Echone UI',
+});

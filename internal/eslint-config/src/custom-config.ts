@@ -14,6 +14,17 @@ const customConfig: Linter.Config[] = [
       'no-console': 'off',
     },
   },
+  {
+    files: ['docs/**/**'],
+    rules: {
+      '@typescript-eslint/no-extraneous-class': 'off',
+      'n/no-extraneous-import': 'off',
+      'n/prefer-global/buffer': 'off',
+      'n/prefer-global/process': 'off',
+      'no-console': 'off',
+      'unicorn/prefer-module': 'off',
+    },
+  },
 ];
 
 export { customConfig };

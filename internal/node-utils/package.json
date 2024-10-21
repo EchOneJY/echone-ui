@@ -1,5 +1,5 @@
 {
-  "name": "@echone-ui/unocss-config",
+  "name": "@echone-ui/node-utils",
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
@@ -13,23 +13,15 @@
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
-  "typesVersions": {
-    "*": {
-      "*": [
-        "./dist/*",
-        "./*"
-      ]
-    }
-  },
   "exports": {
     ".": {
       "types": "./src/index.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs"
-    },
-    "./*": "./*"
+      "default": "./dist/index.mjs"
+    }
   },
   "dependencies": {
-    "unocss": "^0.63.4"
+    "@manypkg/get-packages": "^2.2.2",
+    "find-up": "^7.0.0"
   }
 }

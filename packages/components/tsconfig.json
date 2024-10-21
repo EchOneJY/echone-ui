@@ -4,7 +4,7 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@echone-ui/components": ["./src"]
+      "@echone-ui/components": ["./src/*"]
     }
   },
   "include": ["src"],

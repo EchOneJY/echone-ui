@@ -2,6 +2,7 @@
 import type { HTMLAttributes } from 'vue';
 
 import { cn } from '@echone-ui/utils';
+
 import { Primitive, type PrimitiveProps } from 'radix-vue';
 
 import { type ButtonVariants, buttonVariants } from '.';

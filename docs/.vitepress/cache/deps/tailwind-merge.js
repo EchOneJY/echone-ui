@@ -1,6 +1,6 @@
 import "./chunk-PZ5AY32C.js";
 
-// ../node_modules/.pnpm/tailwind-merge@2.5.3/node_modules/tailwind-merge/dist/bundle-mjs.mjs
+// ../node_modules/.pnpm/tailwind-merge@2.5.4/node_modules/tailwind-merge/dist/bundle-mjs.mjs
 var CLASS_PART_SEPARATOR = "-";
 var createClassGroupUtils = (config) => {
   const classMap = createClassMap(config);
