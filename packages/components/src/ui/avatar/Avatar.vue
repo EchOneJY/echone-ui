@@ -2,6 +2,7 @@
 import type { HTMLAttributes } from 'vue';
 
 import { cn } from '@echone-ui/utils';
+
 import { AvatarRoot } from 'radix-vue';
 
 import { avatarVariant, type AvatarVariants } from '.';

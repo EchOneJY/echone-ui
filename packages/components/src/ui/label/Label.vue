@@ -2,6 +2,7 @@
 import { computed, type HTMLAttributes } from 'vue';
 
 import { cn } from '@echone-ui/utils';
+
 import { Label, type LabelProps } from 'radix-vue';
 
 const props = defineProps<{ class?: HTMLAttributes['class'] } & LabelProps>();

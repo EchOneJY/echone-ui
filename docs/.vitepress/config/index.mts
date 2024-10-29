@@ -18,7 +18,12 @@ export default defineConfig({
       '/components/': [
         {
           text: '基础组件',
-          items: [{ link: '/components/button', text: 'Button 按钮' }],
+          items: [
+            { link: '/components/button', text: 'Button' },
+            { link: '/components/checkbox', text: 'Checkbox' },
+            { link: '/components/icon', text: 'Icon' },
+            { link: '/components/tooltip', text: 'Tooltip' },
+          ],
         },
       ],
     },
