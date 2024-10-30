@@ -9,6 +9,7 @@
     "format": "prettier . --write --cache --log-level warn"
   },
   "devDependencies": {
+    "@echone-ui/commitlint-config": "workspace:*",
     "@echone-ui/components": "workspace:*",
     "@echone-ui/eslint-config": "workspace:*",
     "@echone-ui/prettier-config": "workspace:*",
@@ -19,6 +20,7 @@
     "@vitejs/plugin-vue": "^5.1.4",
     "@vitejs/plugin-vue-jsx": "^4.0.1",
     "@vue/test-utils": "^2.4.6",
+    "cspell": "^8.15.4",
     "happy-dom": "^15.7.4",
     "husky": "^9.1.6",
     "lint-staged": "^15.2.10",
