@@ -9,13 +9,13 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/index.mjs",
-  "module": "./dist/index.mjs",
+  "main": "./dist/index.ts",
+  "module": "./dist/index.ts",
   "exports": {
     ".": {
       "types": "./src/index.ts",
       "development": "./src/index.ts",
-      "default": "./dist/index.mjs"
+      "default": "./dist/index.ts"
     }
   },
   "publishConfig": {
