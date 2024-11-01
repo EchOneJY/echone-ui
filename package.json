@@ -1,9 +1,13 @@
 {
   "scripts": {
     "dev": "vite",
+    "dev:docs": "pnpm -F @echone-ui/docs run dev",
     "build": "vue-tsc -b && vite build",
+    "build:docs": "pnpm -F @echone-ui/docs run build",
     "preview": "vite preview",
     "test:unit": "vitest run --dom",
+    "postinstall": "pnpm -r run stub --if-present",
+    "preinstall": "npx only-allow pnpm",
     "prepare": "husky",
     "lint": "eslint . --fix --cache",
     "format": "prettier . --write --cache --log-level warn"
