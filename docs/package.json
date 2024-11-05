@@ -9,6 +9,8 @@
     "@echone-ui/components": "workspace:*"
   },
   "devDependencies": {
+    "markdown-it-container": "^4.0.0",
+    "sass": "^1.80.6",
     "vitepress": "^1.4.1"
   }
 }

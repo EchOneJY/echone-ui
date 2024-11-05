@@ -4,6 +4,13 @@
   "compilerOptions": {
     "baseUrl": "."
   },
-  "include": [".vitepress/*.mts", ".vitepress/**/*.ts", ".vitepress/**/*.vue"],
+  "include": [
+    ".vitepress/*.mts",
+    ".vitepress/**/*.ts",
+    ".vitepress/**/*.vue",
+    "src/*.mts",
+    "src/**/*.ts",
+    "src/**/*.vue"
+  ],
   "exclude": ["node_modules"]
 }

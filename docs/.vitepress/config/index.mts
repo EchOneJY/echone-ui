@@ -1,8 +1,16 @@
-import { defineConfig } from 'vitepress';
+import tailwind from 'tailwindcss';
+import { defineConfig, postcssIsolateStyles } from 'vitepress';
+
+import { MarkdownTransform } from '../plugins/markdown-transform';
+import { mdPlugin } from './plugins';
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   description: 'The Atomic UI Library',
+  markdown: {
+    preConfig: (md) => mdPlugin(md),
+  },
+  srcDir: 'src',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -26,6 +34,12 @@ export default defineConfig({
           ],
         },
       ],
+      '/guide/': [
+        {
+          text: '快速开始',
+          items: [{ link: '/guide/quick-start', text: 'Quick Start' }],
+        },
+      ],
     },
 
     socialLinks: [
@@ -33,4 +47,22 @@ export default defineConfig({
     ],
   },
   title: 'Echone UI',
+  vite: {
+    build: {
+      chunkSizeWarningLimit: Infinity,
+      minify: 'terser',
+    },
+    css: {
+      postcss: {
+        plugins: [
+          tailwind(),
+          postcssIsolateStyles({ includeFiles: [/vp-doc\.css/] }),
+        ],
+      },
+    },
+    json: {
+      stringify: true,
+    },
+    plugins: [MarkdownTransform()],
+  },
 });

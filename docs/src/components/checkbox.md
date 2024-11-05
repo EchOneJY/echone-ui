@@ -1,5 +1,9 @@
 # Checkbox 选择框
 
+<Description>
+A control that allows the user to toggle between checked and not checked.
+</Description>
+
   <div class="flex items-center space-x-2">
     <EoCheckbox id="terms" class="mr-8"/>
     <label
