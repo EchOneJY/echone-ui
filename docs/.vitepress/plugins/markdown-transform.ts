@@ -78,6 +78,8 @@ export function MarkdownTransform(): Plugin {
       if (!id.endsWith('.md')) return;
 
       const componentId = path.basename(id, '.md');
+      if (componentId === 'index') return;
+
       const append: Append = {
         footers: [],
         headers: [],

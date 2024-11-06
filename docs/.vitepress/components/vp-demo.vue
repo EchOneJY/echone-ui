@@ -23,17 +23,17 @@ function toggleOpen(open: boolean) {
 
 <template>
   <div class="example rounded border">
-    <div class="example-showcase">
+    <div class="m-[0.5px] bg-[--background] p-6">
       <slot name="source"></slot>
     </div>
 
     <div class="divide-y"></div>
 
-    <div class="op-btns">
+    <div class="flex h-10 items-center justify-end p-2">
       <EoTooltip side="top">
         复制
         <template #trigger>
-          <EoIcon class="op-btn" icon="carbon:copy" />
+          <EoIcon class="mx-2 cursor-pointer transition" icon="carbon:copy" />
         </template>
       </EoTooltip>
 
@@ -41,7 +41,7 @@ function toggleOpen(open: boolean) {
         查看源码
         <template #trigger>
           <EoIcon
-            class="op-btn rotate-90"
+            class="mx-2 rotate-90 cursor-pointer transition"
             icon="carbon:chevron-sort"
             @click="toggleOpen(!isOpen)"
           />
@@ -55,21 +55,21 @@ function toggleOpen(open: boolean) {
       </CollapsibleContent>
     </Collapsible>
 
-    <Transition name="el-fade-in-linear">
+    <Transition name="fade">
       <div
         v-show="isOpen"
-        class="example-float-control"
+        class="sticky bottom-0 left-0 right-0 z-10 flex h-10 items-center justify-center bg-[--background] p-2 hover:text-sky-600"
         tabindex="0"
         @click="toggleOpen(false)"
       >
         <EoIcon icon="carbon:caret-up" />
-        <span>隐藏源码</span>
+        <span class="ml-[10px] cursor-pointer text-sm">隐藏源码</span>
       </div>
     </Transition>
   </div>
 </template>
 
-<style scoped lang="scss">
+<!-- <style scoped lang="scss">
 .example {
   .example-showcase {
     padding: 1.5rem;
@@ -136,4 +136,4 @@ function toggleOpen(open: boolean) {
     }
   }
 }
-</style>
+</style> -->

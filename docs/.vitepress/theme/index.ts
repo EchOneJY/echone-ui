@@ -6,7 +6,7 @@ import DefaultTheme from 'vitepress/theme';
 
 import { Description, VPDemo } from '../components';
 
-import './style.css';
+import './styles';
 
 export default {
   enhanceApp({ app }) {

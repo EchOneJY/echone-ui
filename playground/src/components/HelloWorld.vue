@@ -1,18 +1,26 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { reactive, ref } from 'vue';
 
 import { Button } from '@echone-ui/components';
 
 defineProps<{ msg: string }>();
 
 const count = ref(0);
+
+let state = reactive({ count: 0 });
+state = reactive({ count: 1 });
+
+function onClick() {
+  count.value++;
+  Object.assign(state, { count: state.count + 1 });
+}
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
 
   <div class="card">
-    <Button @click="count++">count is {{ count }}</Button>
+    <Button @click="onClick">count is {{ count }} {{ state.count }}</Button>
     <p>
       Edit
       <code>components/HelloWorld.vue</code> to test HMR

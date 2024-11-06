@@ -77,13 +77,13 @@ importers:
       '@echone-ui/components':
         specifier: workspace:*
         version: link:../packages/components
+      '@echone-ui/styles':
+        specifier: workspace:*
+        version: link:../packages/styles
     devDependencies:
       markdown-it-container:
         specifier: ^4.0.0
         version: 4.0.0
-      sass:
-        specifier: ^1.80.6
-        version: 1.80.6
       vitepress:
         specifier: ^1.4.1
         version: 1.4.1(@algolia/client-search@4.24.0)(@types/node@22.7.5)(postcss@8.4.47)(sass@1.80.6)(search-insights@2.17.2)(typescript@5.6.3)
@@ -335,6 +335,8 @@ importers:
       vue:
         specifier: ^3.5.10
         version: 3.5.12(typescript@5.6.3)
+
+  packages/styles: {}
 
   packages/utils:
     dependencies:
@@ -7246,6 +7248,7 @@ snapshots:
   chokidar@4.0.1:
     dependencies:
       readdirp: 4.0.2
+    optional: true
 
   ci-info@4.0.0: {}
 
@@ -8296,7 +8299,8 @@ snapshots:
 
   ignore@6.0.2: {}
 
-  immutable@4.3.7: {}
+  immutable@4.3.7:
+    optional: true
 
   import-fresh@3.3.0:
     dependencies:
@@ -9321,7 +9325,8 @@ snapshots:
     dependencies:
       picomatch: 2.3.1
 
-  readdirp@4.0.2: {}
+  readdirp@4.0.2:
+    optional: true
 
   refa@0.12.1:
     dependencies:
@@ -9412,6 +9417,7 @@ snapshots:
       source-map-js: 1.2.1
     optionalDependencies:
       '@parcel/watcher': 2.5.0
+    optional: true
 
   scslre@0.3.0:
     dependencies:

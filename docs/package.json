@@ -6,11 +6,11 @@
     "preview": "vitepress preview"
   },
   "dependencies": {
-    "@echone-ui/components": "workspace:*"
+    "@echone-ui/components": "workspace:*",
+    "@echone-ui/styles": "workspace:*"
   },
   "devDependencies": {
     "markdown-it-container": "^4.0.0",
-    "sass": "^1.80.6",
     "vitepress": "^1.4.1"
   }
 }

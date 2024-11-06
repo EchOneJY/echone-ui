@@ -1,11 +1,11 @@
 import tailwind from 'tailwindcss';
-import { defineConfig, postcssIsolateStyles } from 'vitepress';
+import { defineConfigWithTheme, postcssIsolateStyles } from 'vitepress';
 
 import { MarkdownTransform } from '../plugins/markdown-transform';
 import { mdPlugin } from './plugins';
 
 // https://vitepress.dev/reference/site-config
-export default defineConfig({
+export default defineConfigWithTheme({
   description: 'The Atomic UI Library',
   markdown: {
     preConfig: (md) => mdPlugin(md),
@@ -13,6 +13,7 @@ export default defineConfig({
   srcDir: 'src',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: '/logo.svg',
     nav: [
       { link: '/', text: 'Home' },
       {
@@ -50,7 +51,6 @@ export default defineConfig({
   vite: {
     build: {
       chunkSizeWarningLimit: Infinity,
-      minify: 'terser',
     },
     css: {
       postcss: {
