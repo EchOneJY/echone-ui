@@ -4,7 +4,7 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "stub": "pnpm unbuild --stub"
+    "#build": "pnpm unbuild"
   },
   "main": "./src/index.ts",
   "module": "./src/index.ts",

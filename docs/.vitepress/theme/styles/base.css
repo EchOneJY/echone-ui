@@ -6,6 +6,11 @@ html.dark {
   /* background-color: #14161a; */
 }
 
+.vp-doc .language-vue {
+  margin: 0 !important;
+  border-radius: 0 !important;
+}
+
 .image-src {
   width: 240px;
   height: 240px;

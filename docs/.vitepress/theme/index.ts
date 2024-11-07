@@ -4,7 +4,7 @@ import { EoButton, EoCheckbox, EoIcon, EoTooltip } from '@echone-ui/components';
 
 import DefaultTheme from 'vitepress/theme';
 
-import { Description, VPDemo } from '../components';
+import { ApiEnumType, ApiTyping, Description, VPDemo } from '../components';
 
 import './styles';
 
@@ -16,6 +16,8 @@ export default {
     app.component('EoCheckbox', EoCheckbox);
     app.component('EoIcon', EoIcon);
     app.component('EoTooltip', EoTooltip);
+    app.component('ApiTyping', ApiTyping);
+    app.component('EnumType', ApiEnumType);
   },
 
   extends: DefaultTheme,

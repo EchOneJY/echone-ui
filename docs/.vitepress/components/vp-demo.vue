@@ -2,6 +2,7 @@
 import { computed, ref } from 'vue';
 
 import { Collapsible, CollapsibleContent } from '@echone-ui/components';
+import { ChevronsLeftRight } from '@echone-ui/icons';
 
 const props = defineProps({
   source: {
@@ -22,27 +23,19 @@ function toggleOpen(open: boolean) {
 </script>
 
 <template>
-  <div class="example rounded border">
+  <div class="rounded border">
     <div class="m-[0.5px] bg-[--background] p-6">
       <slot name="source"></slot>
     </div>
 
-    <div class="divide-y"></div>
+    <div class="divide-y border-t-[1px]"></div>
 
     <div class="flex h-10 items-center justify-end p-2">
       <EoTooltip side="top">
-        复制
-        <template #trigger>
-          <EoIcon class="mx-2 cursor-pointer transition" icon="carbon:copy" />
-        </template>
-      </EoTooltip>
-
-      <EoTooltip side="top">
         查看源码
         <template #trigger>
-          <EoIcon
-            class="mx-2 rotate-90 cursor-pointer transition"
-            icon="carbon:chevron-sort"
+          <ChevronsLeftRight
+            class="hover:bg-accent size-7 cursor-pointer rounded-full p-1.5"
             @click="toggleOpen(!isOpen)"
           />
         </template>
@@ -58,12 +51,12 @@ function toggleOpen(open: boolean) {
     <Transition name="fade">
       <div
         v-show="isOpen"
-        class="sticky bottom-0 left-0 right-0 z-10 flex h-10 items-center justify-center bg-[--background] p-2 hover:text-sky-600"
+        class="sticky bottom-0 left-0 right-0 z-10 flex h-10 cursor-pointer items-center justify-center border-t-[1px] bg-white p-2 hover:text-sky-600"
         tabindex="0"
         @click="toggleOpen(false)"
       >
         <EoIcon icon="carbon:caret-up" />
-        <span class="ml-[10px] cursor-pointer text-sm">隐藏源码</span>
+        <span class="ml-[10px] text-sm">隐藏源码</span>
       </div>
     </Transition>
   </div>

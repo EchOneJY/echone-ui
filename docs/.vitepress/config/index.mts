@@ -22,7 +22,9 @@ export default defineConfigWithTheme({
         text: '基础组件',
       },
     ],
-
+    search: {
+      provider: 'local',
+    },
     sidebar: {
       '/components/': [
         {

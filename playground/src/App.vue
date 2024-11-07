@@ -1,5 +1,10 @@
 <script setup lang="ts">
-import { EoButton } from '@echone-ui/components';
+import {
+  EoButton,
+  EoHelpTooltip,
+  EoIconButton,
+  EoTooltip,
+} from '@echone-ui/components';
 
 import HelloWorld from './components/HelloWorld.vue';
 </script>
@@ -16,4 +21,15 @@ import HelloWorld from './components/HelloWorld.vue';
   <EoButton as-child>
     <a href="/login"> Login </a>
   </EoButton>
+  <EoHelpTooltip> 123123 </EoHelpTooltip>
+
+  <EoTooltip :delay-duration="300" side="right">
+    <template #trigger><span>123</span></template>
+    123123
+  </EoTooltip>
+
+  <EoIconButton tooltip-side="right">
+    <template #tooltip> 211234 </template>
+    test
+  </EoIconButton>
 </template>

@@ -15,6 +15,7 @@ export {
   ChevronLeft,
   ChevronRight,
   ChevronsLeft,
+  ChevronsLeftRight,
   ChevronsRight,
   CircleHelp,
   Copy,

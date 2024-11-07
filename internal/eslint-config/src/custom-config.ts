@@ -18,6 +18,7 @@ const customConfig: Linter.Config[] = [
     files: ['docs/**/**'],
     rules: {
       '@typescript-eslint/no-extraneous-class': 'off',
+      '@typescript-eslint/no-non-null-assertion': 'off',
       'n/no-extraneous-import': 'off',
       'n/prefer-global/buffer': 'off',
       'n/prefer-global/process': 'off',
