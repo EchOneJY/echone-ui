@@ -1,86 +1,92 @@
 {
-  "hash": "cecad95f",
+  "hash": "57ee1cf1",
   "configHash": "9ce1b23c",
-  "lockfileHash": "07ae8a0a",
-  "browserHash": "7f093fcd",
+  "lockfileHash": "f58b4f90",
+  "browserHash": "65cca1fc",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/.pnpm/vue@3.5.12_typescript@5.6.3/node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "7934a26a",
+      "fileHash": "52175c44",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/.pnpm/@vue+devtools-api@7.4.6/node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "a7e6185a",
+      "fileHash": "b2d7a9c5",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/.pnpm/@vueuse+core@11.1.0_vue@3.5.12_typescript@5.6.3_/node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "fc5e3c5d",
+      "fileHash": "9609b864",
       "needsInterop": false
     },
     "vitepress > @vueuse/integrations/useFocusTrap": {
       "src": "../../../../node_modules/.pnpm/@vueuse+integrations@11.1.0_focus-trap@7.6.0_vue@3.5.12_typescript@5.6.3_/node_modules/@vueuse/integrations/useFocusTrap.mjs",
       "file": "vitepress___@vueuse_integrations_useFocusTrap.js",
-      "fileHash": "24e3f604",
+      "fileHash": "5a7e575c",
       "needsInterop": false
     },
     "vitepress > mark.js/src/vanilla.js": {
       "src": "../../../../node_modules/.pnpm/mark.js@8.11.1/node_modules/mark.js/src/vanilla.js",
       "file": "vitepress___mark__js_src_vanilla__js.js",
-      "fileHash": "b37308f1",
+      "fileHash": "dd9260cd",
       "needsInterop": false
     },
     "vitepress > minisearch": {
       "src": "../../../../node_modules/.pnpm/minisearch@7.1.0/node_modules/minisearch/dist/es/index.js",
       "file": "vitepress___minisearch.js",
-      "fileHash": "efe8266c",
+      "fileHash": "83999610",
       "needsInterop": false
     },
     "radix-vue": {
       "src": "../../../../node_modules/.pnpm/radix-vue@1.9.7_vue@3.5.12_typescript@5.6.3_/node_modules/radix-vue/dist/index.js",
       "file": "radix-vue.js",
-      "fileHash": "b66d6fb6",
+      "fileHash": "0d3800b9",
       "needsInterop": false
     },
     "class-variance-authority": {
       "src": "../../../../node_modules/.pnpm/class-variance-authority@0.7.0/node_modules/class-variance-authority/dist/index.mjs",
       "file": "class-variance-authority.js",
-      "fileHash": "9aa3fe92",
+      "fileHash": "45e62b60",
       "needsInterop": false
     },
     "lucide-vue-next": {
       "src": "../../../../node_modules/.pnpm/lucide-vue-next@0.453.0_vue@3.5.12_typescript@5.6.3_/node_modules/lucide-vue-next/dist/esm/lucide-vue-next.js",
       "file": "lucide-vue-next.js",
-      "fileHash": "71129aed",
+      "fileHash": "4555f614",
       "needsInterop": false
     },
     "@iconify/vue": {
       "src": "../../../../node_modules/.pnpm/@iconify+vue@4.1.2_vue@3.5.12_typescript@5.6.3_/node_modules/@iconify/vue/dist/iconify.mjs",
       "file": "@iconify_vue.js",
-      "fileHash": "5282e074",
+      "fileHash": "c36a2dda",
       "needsInterop": false
     },
     "clsx": {
       "src": "../../../../node_modules/.pnpm/clsx@2.1.1/node_modules/clsx/dist/clsx.mjs",
       "file": "clsx.js",
-      "fileHash": "8cfade47",
+      "fileHash": "eb7d058d",
       "needsInterop": false
     },
     "tailwind-merge": {
       "src": "../../../../node_modules/.pnpm/tailwind-merge@2.5.4/node_modules/tailwind-merge/dist/bundle-mjs.mjs",
       "file": "tailwind-merge.js",
-      "fileHash": "ef284938",
+      "fileHash": "f64374f4",
       "needsInterop": false
     },
     "@vue/shared": {
       "src": "../../../../node_modules/.pnpm/@vue+shared@3.5.12/node_modules/@vue/shared/dist/shared.esm-bundler.js",
       "file": "@vue_shared.js",
-      "fileHash": "6ce6ca6c",
+      "fileHash": "aa32cdce",
       "needsInterop": false
+    },
+    "clipboard-copy": {
+      "src": "../../../../node_modules/.pnpm/clipboard-copy@4.0.1/node_modules/clipboard-copy/index.js",
+      "file": "clipboard-copy.js",
+      "fileHash": "dc6cc6e3",
+      "needsInterop": true
     }
   },
   "chunks": {
@@ -96,8 +102,8 @@
     "chunk-PK2WSZZ2": {
       "file": "chunk-PK2WSZZ2.js"
     },
-    "chunk-PZ5AY32C": {
-      "file": "chunk-PZ5AY32C.js"
+    "chunk-HKJ2B2AA": {
+      "file": "chunk-HKJ2B2AA.js"
     }
   }
 }

@@ -3,7 +3,7 @@ import {
   h
 } from "./chunk-SNM5EKV2.js";
 import "./chunk-PK2WSZZ2.js";
-import "./chunk-PZ5AY32C.js";
+import "./chunk-HKJ2B2AA.js";
 
 // ../node_modules/.pnpm/@iconify+vue@4.1.2_vue@3.5.12_typescript@5.6.3_/node_modules/@iconify/vue/dist/iconify.mjs
 var matchIconName = /^[a-z0-9]+(-[a-z0-9]+)*$/;

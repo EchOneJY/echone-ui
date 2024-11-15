@@ -7,7 +7,9 @@
   },
   "dependencies": {
     "@echone-ui/components": "workspace:*",
-    "@echone-ui/styles": "workspace:*"
+    "@echone-ui/icons": "workspace:*",
+    "@echone-ui/styles": "workspace:*",
+    "clipboard-copy": "^4.0.1"
   },
   "devDependencies": {
     "markdown-it-container": "^4.0.0",

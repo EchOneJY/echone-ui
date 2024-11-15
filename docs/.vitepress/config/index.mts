@@ -21,6 +21,12 @@ export default defineConfigWithTheme({
         link: '/components/button',
         text: '基础组件',
       },
+      {
+        component: 'ThemePicker',
+        props: {
+          allColors: ['violet', 'pink', 'rose', 'sky-blue', 'zinc'],
+        },
+      },
     ],
     search: {
       provider: 'local',

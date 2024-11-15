@@ -11,6 +11,6 @@
     "src/*.mts",
     "src/**/*.ts",
     "src/**/*.vue"
-  ],
+, ".vitepress/components/icons.data.mts"  ],
   "exclude": ["node_modules"]
 }

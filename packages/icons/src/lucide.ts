@@ -41,6 +41,7 @@ export {
   Minimize,
   Minimize2,
   MoonStar,
+  Paintbrush,
   Palette,
   PanelLeft,
   PanelRight,
