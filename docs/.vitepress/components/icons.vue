@@ -123,7 +123,7 @@ const filterLucideCategories = computed(() => {
 }
 
 .icon-item:hover {
-  @apply bg-slate-100 text-slate-400;
+  @apply text-primary bg-slate-100;
 }
 
 .demo-svg-icon {

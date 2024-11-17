@@ -77,6 +77,9 @@ importers:
       '@echone-ui/components':
         specifier: workspace:*
         version: link:../packages/components
+      '@echone-ui/icons':
+        specifier: workspace:*
+        version: link:../packages/icons
       '@echone-ui/styles':
         specifier: workspace:*
         version: link:../packages/styles

@@ -23,9 +23,6 @@ export default defineConfigWithTheme({
       },
       {
         component: 'ThemePicker',
-        props: {
-          allColors: ['violet', 'pink', 'rose', 'sky-blue', 'zinc'],
-        },
       },
     ],
     search: {
@@ -37,9 +34,7 @@ export default defineConfigWithTheme({
           text: '基础组件',
           items: [
             { link: '/components/button', text: 'Button' },
-            { link: '/components/checkbox', text: 'Checkbox' },
             { link: '/components/icon', text: 'Icon' },
-            { link: '/components/tooltip', text: 'Tooltip' },
           ],
         },
       ],

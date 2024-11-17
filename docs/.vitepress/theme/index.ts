@@ -28,6 +28,5 @@ export default {
     app.component('VPDemo', VPDemo);
     app.component('ThemePicker', ThemePicker);
   },
-
   extends: DefaultTheme,
 } satisfies Theme;
