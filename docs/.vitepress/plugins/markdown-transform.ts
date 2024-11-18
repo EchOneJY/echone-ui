@@ -54,9 +54,7 @@ const getExampleImports = (componentId: string) => {
     const file = item.replace(/\.vue$/, '');
     const name = camelize(`Eo-${componentId}-${file}`);
 
-    imports.push(
-      `import ${name} from '../../src/demos/${componentId}/${file}.vue'`,
-    );
+    imports.push(`import ${name} from '/demos/${componentId}/${file}.vue'`);
   }
 
   return imports;

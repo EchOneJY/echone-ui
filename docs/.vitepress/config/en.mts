@@ -40,8 +40,8 @@ export const en = defineConfig({
 
 function sidebarComponents(): DefaultTheme.SidebarItem[] {
   return [
-    { link: '/components/button', text: 'Button' },
-    { link: '/components/icon', text: 'Icon' },
+    { link: '/button', text: 'Button' },
+    { link: '/icon', text: 'Icon' },
   ];
 }
 

@@ -29,19 +29,19 @@ export const zh = defineConfig({
     },
     returnToTopLabel: '回到顶部',
     sidebar: {
-      '/en/components/': {
-        base: '/en/components/',
+      '/components/': {
+        base: '/components/',
         items: sidebarComponents(),
       },
-      '/en/guide/': { base: '/en/guide/', items: sidebarGuide() },
+      '/guide/': { base: '/guide/', items: sidebarGuide() },
     },
   },
 });
 
 function sidebarComponents(): DefaultTheme.SidebarItem[] {
   return [
-    { link: '/components/button', text: '按钮' },
-    { link: '/components/icon', text: '图标' },
+    { link: '/button', text: '按钮' },
+    { link: '/icon', text: '图标' },
   ];
 }
 
