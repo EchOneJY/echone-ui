@@ -3,17 +3,17 @@ layout: home
 
 hero:
   name: 'Echone UI'
-  text: 'The Atomic UI Library'
+  text: '原子化CSS UI组件库'
   tagline: My great project tagline
   image:
     src: /logo.png
     alt: Echone UI
   actions:
     - theme: brand
-      text: Quick Start
-      link: /guide/quick-start
+      text: 快速开始
+      link: /en/guide/quick-start
     - theme: alt
-      text: Components
+      text: 组件
       link: /components/button
 
 features:

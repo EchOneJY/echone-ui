@@ -21,13 +21,7 @@ function createDemoContainer(md: MarkdownRenderer): ContainerOpts {
 
         if (sourceFileToken?.type === 'inline') {
           source = fs.readFileSync(
-            path.resolve(
-              process.cwd(),
-              'src',
-              'components',
-              'demos',
-              `${sourceFile}.vue`,
-            ),
+            path.resolve(process.cwd(), 'src', 'demos', `${sourceFile}.vue`),
             'utf8',
           );
         }

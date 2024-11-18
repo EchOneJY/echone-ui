@@ -44,13 +44,7 @@ const transformVpScriptSetup = (code: string, append: Append) => {
 };
 
 const getExampleImports = (componentId: string) => {
-  const examplePath = path.resolve(
-    process.cwd(),
-    'src',
-    'components',
-    'demos',
-    componentId,
-  );
+  const examplePath = path.resolve(process.cwd(), 'src', 'demos', componentId);
   if (!fs.existsSync(examplePath)) return [];
   const files = fs.readdirSync(examplePath);
   const imports: string[] = [];
@@ -61,7 +55,7 @@ const getExampleImports = (componentId: string) => {
     const name = camelize(`Eo-${componentId}-${file}`);
 
     imports.push(
-      `import ${name} from '../../src/components/demos/${componentId}/${file}.vue'`,
+      `import ${name} from '../../src/demos/${componentId}/${file}.vue'`,
     );
   }
 
