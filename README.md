@@ -1,5 +1,38 @@
-# Vue 3 + TypeScript + Vite
+<br />
+<p align="center">
+  <a href="https://github.com/EchOneJY/echone-ui">
+    <img src="https://github.com/EchOneJY/echone-ui/blob/main/docs/src/public/logo.svg" alt="Logo" width="150" />
+  </a>
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+<h1 align="center">
+Echone UI
+</h1>
+<p align="center">
+A Vue.js 3 Atomic UI library.
+Made with Tailwind CSS. Open source.
+<p>
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## Features
+
+- 💪 Vue 3 - Developed with the latest features of Vue.js
+- 🔥 [**TS**](https://www.typescriptlang.org/) - Written in TypeScript
+- 🌟 Icons - access to icons from any icon set directly
+- ⚡️ [**Fast**](https://vitejs.dev) - instant reloading powered by [Vite](https://vitejs.dev)
+
+## Installation
+
+## Documentation
+
+For full documentation, visit [documents](https://echone-ui.vercel.app/).
+
+## Releases
+
+For changelog, visit [releases](https://github.com/EchOneJY/echone-ui/releases).
+
+## Contributing
+
+We would love to have your contributions! All PRs all welcomed! We need help building the core components, docs, tests, stories! Join our discord and we will get you up and running!
+
+## License
+
+Licensed under the [MIT license](https://github.com/EchOneJY/echone-ui/blob/main/LICENSE).
