@@ -1,23 +1,17 @@
 <script setup lang="ts">
-import type { TooltipContentProps } from 'radix-vue';
-
-import type { StyleValue } from 'vue';
+import type { TooltipProps } from './tooltip';
 
 import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from '../../ui';
+} from '../../../ui';
 
-interface Props {
-  contentClass?: any;
-  contentStyle?: StyleValue;
-  delayDuration?: number;
-  side?: TooltipContentProps['side'];
-}
-
-withDefaults(defineProps<Props>(), {
+defineOptions({
+  name: 'EoTooltip',
+});
+withDefaults(defineProps<TooltipProps>(), {
   delayDuration: 0,
   side: 'right',
 });

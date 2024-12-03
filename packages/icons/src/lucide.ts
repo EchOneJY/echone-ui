@@ -3,6 +3,7 @@ export {
   ArrowLeft,
   ArrowLeftFromLine as MdiMenuOpen,
   ArrowLeftToLine,
+  ArrowRight,
   ArrowRightFromLine as MdiMenuClose,
   ArrowRightLeft,
   ArrowRightToLine,

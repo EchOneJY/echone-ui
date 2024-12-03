@@ -6,7 +6,7 @@ import { CircleHelp } from 'lucide-vue-next';
 import Tooltip from './tooltip.vue';
 
 defineOptions({
-  inheritAttrs: false,
+  name: 'EoHelpTooltip',
 });
 
 defineProps<{ triggerClass?: string }>();

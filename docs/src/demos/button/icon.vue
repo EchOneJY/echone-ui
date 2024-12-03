@@ -4,6 +4,7 @@ import { Copy, Info, Pin, Search, Settings, Sun } from '@echone-ui/icons';
 
 <template>
   <div class="flex items-center space-x-2">
+    <EoButton :icon="Search"> 搜索 </EoButton>
     <EoButton>
       <Settings class="h-4 w-4" />
     </EoButton>

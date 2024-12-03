@@ -47,6 +47,28 @@ button/loading
 
 :::
 
+## 调整尺寸
+
+除了默认的大小，按钮组件还提供了几种额外的尺寸可供选择，以便适配不同的场景。<br> 包括default、lg、sm、xs.
+
+:::demo
+
+button/size
+
+:::
+
+## 组合按钮
+
+以按钮组的方式出现，常用于多项类似操作。
+
+使用 `<eo-button-group>` 对多个按钮分组。
+
+:::demo
+
+button/group
+
+:::
+
 ## Button API
 
 ### Button Attributes

@@ -4,6 +4,10 @@ import { type Component, computed } from 'vue';
 import { Icon, IconDefault } from '@echone-ui/icons';
 import { isFunction, isHttpUrl, isObject, isString } from '@echone-ui/utils';
 
+defineOptions({
+  name: 'EoIcon',
+});
+
 const props = defineProps<{
   // 没有是否显示默认图标
   fallback?: boolean;

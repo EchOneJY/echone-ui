@@ -47,6 +47,14 @@ button/loading
 
 :::
 
+## 组合按钮
+
+:::demo
+
+button/group
+
+:::
+
 ## Button API
 
 ### Button Attributes

@@ -1,8 +1,11 @@
 import type { AsTag } from 'radix-vue';
 
-import type { ButtonVariants } from '../../ui';
+import type { ButtonVariants } from '../../../ui';
+import type Button from './button.vue';
 
 import type { Component } from 'vue';
+
+import { iconPropType } from '@echone-ui/utils';
 
 export interface EoButtonProps {
   /**
@@ -18,7 +21,11 @@ export interface EoButtonProps {
   asChild?: boolean;
   class?: any;
   disabled?: boolean;
+  icon?: typeof iconPropType;
   loading?: boolean;
+  loadingIcon?: typeof iconPropType;
   size?: ButtonVariants['size'];
-  variant?: 'icon' | ButtonVariants['variant'];
+  variant?: ButtonVariants['variant'];
 }
+
+export type ButtonInstance = InstanceType<typeof Button>;
