@@ -1,7 +1,6 @@
 <script setup lang="ts">
+import { CircleHelp } from '@echone-ui/icons';
 import { cn } from '@echone-ui/utils';
-
-import { CircleHelp } from 'lucide-vue-next';
 
 import Tooltip from './tooltip.vue';
 

@@ -1,13 +1,8 @@
 <script setup lang="ts">
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@echone-ui/components';
+import { EoIcon, EoTooltip } from '@echone-ui/components';
 import { Info } from '@echone-ui/icons';
 
-const props = defineProps({
+defineProps({
   details: {
     required: true,
     type: String,
@@ -17,8 +12,6 @@ const props = defineProps({
     type: String,
   },
 });
-
-console.log(props);
 </script>
 
 <template>
@@ -26,34 +19,17 @@ console.log(props);
     <code class="api-typing mr-1">
       {{ type }}
     </code>
-    <TooltipProvider>
-      <Tooltip>
-        <TooltipTrigger as-child>
-          <Info />
-        </TooltipTrigger>
-        <TooltipContent>
-          <div class="m-1" style="max-width: 600px">
-            <code>
-              {{ details }}
-            </code>
-          </div>
-        </TooltipContent>
-      </Tooltip>
-    </TooltipProvider>
-    <EoTooltip v-if="details">
+    <EoTooltip side="top">
       <template #trigger>
-        <EoButton class="text-4 p-2">
+        <EoIcon class="ml-2 cursor-pointer text-sm text-gray-500">
           <Info />
-        </EoButton>
+        </EoIcon>
       </template>
-
-      <slot>
-        <div class="m-1" style="max-width: 600px">
-          <code>
-            {{ details }}
-          </code>
-        </div>
-      </slot>
+      <div class="m-1" style="max-width: 600px">
+        <code>
+          {{ details }}
+        </code>
+      </div>
     </EoTooltip>
   </span>
 </template>

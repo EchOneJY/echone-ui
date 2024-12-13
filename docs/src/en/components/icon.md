@@ -1,4 +1,4 @@
-# Icon 图标
+# Icon
 
 ## Installation
 
@@ -24,3 +24,12 @@ icon/basic
 :::
 
 <IconList />
+
+## API
+
+### Attributes
+
+| Name  | Description | Type   | Default |
+| ----- | ----------- | ------ | ------- |
+| size  | icon size   | string | —       |
+| color | icon color  | string | —       |

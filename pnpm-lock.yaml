@@ -323,9 +323,6 @@ importers:
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
-      lucide-vue-next:
-        specifier: ^0.453.0
-        version: 0.453.0(vue@3.5.12(typescript@5.6.3))
       radix-vue:
         specifier: ^1.9.7
         version: 1.9.7(vue@3.5.12(typescript@5.6.3))

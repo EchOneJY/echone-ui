@@ -4,8 +4,6 @@ const tooltip = (md: MarkdownRenderer): void => {
   md.renderer.rules.tooltip = (tokens, idx) => {
     const token = tokens[idx];
 
-    console.log('token', tokens);
-
     return `<api-typing type="${token?.content}" details="${token?.info}" />`;
   };
 

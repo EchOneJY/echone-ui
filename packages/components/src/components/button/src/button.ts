@@ -1,7 +1,6 @@
 import type { AsTag } from 'radix-vue';
 
 import type { ButtonVariants } from '../../../ui';
-import type Button from './button.vue';
 
 import type { Component } from 'vue';
 
@@ -27,5 +26,3 @@ export interface EoButtonProps {
   size?: ButtonVariants['size'];
   variant?: ButtonVariants['variant'];
 }
-
-export type ButtonInstance = InstanceType<typeof Button>;

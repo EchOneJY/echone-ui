@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { EoButtonGroup, EoIconWrap } from '@echone-ui/components';
+import { EoButtonGroup, EoIcon } from '@echone-ui/components';
 import { ArrowLeft, ArrowRight } from '@echone-ui/icons';
 </script>
 
@@ -9,9 +9,9 @@ import { ArrowLeft, ArrowRight } from '@echone-ui/icons';
       <EoButton :icon="ArrowLeft"> Prev </EoButton>
       <EoButton>
         Next
-        <EoIconWrap class="ml-2">
+        <EoIcon class="ml-2">
           <ArrowRight />
-        </EoIconWrap>
+        </EoIcon>
       </EoButton>
     </EoButtonGroup>
 

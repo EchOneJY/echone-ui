@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import { h } from 'vue';
 
-import { EoIcon } from '@echone-ui/components';
+import { IconifyIcon } from '@echone-ui/icons';
 
-const loadingIcon = h(EoIcon, {
+const loadingIcon = h(IconifyIcon, {
   icon: 'ep:loading',
   style: { fontSize: '24px' },
 });

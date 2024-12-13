@@ -7,7 +7,7 @@ import { mdPlugin } from './plugins';
 // https://vitepress.dev/reference/site-config
 export const shared = defineConfig({
   markdown: {
-    preConfig: (md) => mdPlugin(md),
+    config: (md) => mdPlugin(md),
   },
   srcDir: 'src',
   themeConfig: {

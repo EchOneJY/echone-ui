@@ -1,32 +1,42 @@
-<script setup lang="ts">
-import { type Component, computed } from 'vue';
+<script lang="ts" setup>
+import type { EoIconProps } from './icon';
 
-import { Icon, IconDefault } from '@echone-ui/icons';
-import { isFunction, isHttpUrl, isObject, isString } from '@echone-ui/utils';
+import { computed } from 'vue';
+import type { CSSProperties } from 'vue';
+
+import { addUnit, isUndefined } from '@echone-ui/utils';
 
 defineOptions({
+  inheritAttrs: false,
   name: 'EoIcon',
 });
+const props = defineProps<EoIconProps>();
 
-const props = defineProps<{
-  // 没有是否显示默认图标
-  fallback?: boolean;
-  icon?: Component | Function | string;
-}>();
+const style = computed<CSSProperties>(() => {
+  const { color, size } = props;
+  if (!size && !color) return {};
 
-const isRemoteIcon = computed(() => {
-  return isString(props.icon) && isHttpUrl(props.icon);
-});
-
-const isComponent = computed(() => {
-  const { icon } = props;
-  return !isString(icon) && (isObject(icon) || isFunction(icon));
+  return {
+    '--color': color,
+    fontSize: isUndefined(size) ? undefined : addUnit(size),
+  };
 });
 </script>
 
 <template>
-  <component :is="icon as Component" v-if="isComponent" v-bind="$attrs" />
-  <img v-else-if="isRemoteIcon" :src="icon as string" v-bind="$attrs" />
-  <Icon v-else-if="icon" v-bind="$attrs" :icon="icon as string" />
-  <IconDefault v-else-if="fallback" v-bind="$attrs" />
+  <i
+    :style="style"
+    class="eo-icon relative inline-flex items-center justify-center text-[var(--color)]"
+    v-bind="$attrs"
+  >
+    <slot></slot>
+  </i>
 </template>
+
+<style>
+.eo-icon {
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+}
+</style>

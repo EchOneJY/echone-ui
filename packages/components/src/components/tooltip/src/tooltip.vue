@@ -1,5 +1,7 @@
 <script setup lang="ts">
-import type { TooltipProps } from './tooltip';
+import type { EoTooltipProps } from './tooltip';
+
+import { TooltipArrow } from 'radix-vue';
 
 import {
   Tooltip,
@@ -11,7 +13,7 @@ import {
 defineOptions({
   name: 'EoTooltip',
 });
-withDefaults(defineProps<TooltipProps>(), {
+withDefaults(defineProps<EoTooltipProps>(), {
   delayDuration: 0,
   side: 'right',
 });
@@ -29,6 +31,7 @@ withDefaults(defineProps<TooltipProps>(), {
         :style="contentStyle"
         class="side-content text-popover-foreground bg-accent rounded-md"
       >
+        <TooltipArrow :height="6" :width="10" class="fill-accent" />
         <slot></slot>
       </TooltipContent>
     </Tooltip>

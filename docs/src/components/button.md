@@ -73,7 +73,9 @@ button/group
 
 ### Button Attributes
 
-<!-- | Name | Description | Type | Default |
-| ----------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ------- |
-| variant | button type | ^[enum]`'default' \| 'destructive' \| 'ghost' \| 'link' \| 'outline' \| 'secondary'` | — |
-| size | button size | ^[enum]`'default' \| 'lg' \| 'sm' \| 'xs' \| 'icon'`  | — | -->
+| Name | Description | Type | Default |
+| --- | --- | --- | --- |
+| variant | 类型 | ^[enum]`'default' \| 'destructive' \| 'ghost' \| 'link' \| 'outline' \| 'secondary'` | default |
+| size | 尺寸 | ^[enum]`'default' \| 'lg' \| 'sm' \| 'xs' \| 'icon'` | default |
+| disabled | 按钮是否为禁用状态 | boolean | false |
+| loading | 是否为加载中状态 | boolean | false |

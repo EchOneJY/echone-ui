@@ -41,3 +41,33 @@ textarea {
 .VPNavBarMenuGroup.active {
   border-bottom-color: var(--vp-c-brand-1);
 }
+
+.vp-doc .vp-table {
+  width: 100%;
+  margin-bottom: 45px;
+  overflow: auto hidden;
+}
+
+.vp-doc .vp-table > table {
+  display: table;
+  width: 100%;
+  font-size: 14px;
+  line-height: 1.5em;
+  border-collapse: collapse;
+  background-color: var(--background);
+}
+
+.vp-doc .vp-table > table th,
+table td {
+  max-width: 250px;
+  padding: 0.6em 1em;
+  text-align: left;
+  white-space: nowrap;
+  white-space: pre-wrap;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.vp-doc .vp-table > table thead tr:first-child th {
+  border-top: none;
+}

@@ -9,7 +9,7 @@ import { cn } from '@echone-ui/utils';
 import { Primitive } from 'radix-vue';
 
 import { buttonVariants } from '../../../ui';
-import { EoIconWrap } from '../../index';
+import { EoIcon } from '../../index';
 import { buttonGroupContextKey } from './constants';
 
 interface Props extends EoButtonProps {}
@@ -51,14 +51,14 @@ const isDisabled = computed(() => {
   >
     <template v-if="loading">
       <slot v-if="$slots.loading" name="loading"></slot>
-      <EoIconWrap v-else class="animate-spin">
+      <EoIcon v-else class="animate-spin">
         <component :is="loadingIcon" />
-      </EoIconWrap>
+      </EoIcon>
     </template>
-    <EoIconWrap v-else-if="icon || $slots.icon">
+    <EoIcon v-else-if="icon || $slots.icon">
       <component :is="icon" v-if="icon" />
       <slot v-else name="icon"></slot>
-    </EoIconWrap>
+    </EoIcon>
 
     <span
       v-if="$slots.default"

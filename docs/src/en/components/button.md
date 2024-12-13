@@ -5,11 +5,11 @@ name: button
 aria: https://www.w3.org/WAI/ARIA/apg/patterns/accordion
 ---
 
-# Button 按钮
+# Button
 
-## 按钮类型
+## Types
 
-你可以使用 variant 属性来定义按钮类型。<br> 包括default、secondary、destructive、ghost、outline、link.
+You can use the variant prop to define the button type.<br> Including default, secondary, destructive, ghost, outline, link.
 
 :::demo
 
@@ -17,9 +17,9 @@ button/basic
 
 :::
 
-## 禁用
+## Disabled
 
-你可以使用 disabled 属性来定义按钮是否被禁用。使用 disabled 属性来控制按钮是否为禁用状态。 <br> 该属性接受一个Boolean 类型的值。
+You can use the disabled prop to define whether the button is disabled. Use the disabled prop to control the disabled state of the button.<br> This prop accepts a Boolean value.
 
 :::demo
 
@@ -27,9 +27,9 @@ button/disabled
 
 :::
 
-## 图标按钮
+## Icon Button
 
-使用图标为按钮添加更多的含义。
+Use icons to add more meaning to buttons.
 
 :::demo
 
@@ -37,9 +37,9 @@ button/icon
 
 :::
 
-## 加载状态按钮
+## Loading State Button
 
-点击按钮来加载数据，并向用户反馈加载状态。
+Click the button to load data and provide loading state feedback to users.
 
 :::demo
 
@@ -47,7 +47,7 @@ button/loading
 
 :::
 
-## 组合按钮
+## Button Group
 
 :::demo
 
@@ -55,11 +55,13 @@ button/group
 
 :::
 
-## Button API
+## API
 
-### Button Attributes
+### Attributes
 
-<!-- | Name | Description | Type | Default |
-| ----------------- | ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- | ------- |
-| variant | button type | ^[enum]`'default' \| 'destructive' \| 'ghost' \| 'link' \| 'outline' \| 'secondary'` | — |
-| size | button size | ^[enum]`'default' \| 'lg' \| 'sm' \| 'xs' \| 'icon'`  | — | -->
+| Name | Description | Type | Default |
+| --- | --- | --- | --- |
+| variant | button type | ^[enum]`'default' \| 'destructive' \| 'ghost' \| 'link' \| 'outline' \| 'secondary'` | default |
+| size | button size | ^[enum]`'default' \| 'lg' \| 'sm' \| 'xs' \| 'icon'` | default |
+| disabled | button disabled | boolean | false |
+| loading | button loading | boolean | false |

@@ -1,11 +1,11 @@
-# Icon 图标
+# 图标
 
-## Installation
+## 安装
 
-### Using packaging manager
+### 使用包管理工具
 
 ```shell
-# Choose a package manager you like.
+# 选择你喜欢的包管理工具。
 
 # NPM
 $ npm install @echone-ui/icons
@@ -15,7 +15,7 @@ $ yarn add @echone-ui/icons
 $ pnpm install @echone-ui/icons
 ```
 
-## Basic Usage
+## 基础使用
 
 :::demo
 
@@ -23,4 +23,15 @@ icon/basic
 
 :::
 
+## 图标集合
+
 <IconList />
+
+## API
+
+### Attributes
+
+| Name  | Description | Type   | Default |
+| ----- | ----------- | ------ | ------- |
+| size  | 图标大小    | string | —       |
+| color | 图标颜色    | string | —       |

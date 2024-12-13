@@ -2,6 +2,7 @@
 import { computed, ref } from 'vue';
 
 import * as Icons from '@echone-ui/icons';
+import { IconifyIcon } from '@echone-ui/icons';
 
 import clipboardCopy from 'clipboard-copy';
 
@@ -86,7 +87,9 @@ const filterLucideCategories = computed(() => {
       @click="copySvgIcon(item, $refs)"
     >
       <span class="demo-svg-icon">
-        <EoIcon :icon="item" class="text-2xl" />
+        <EoIcon size="24">
+          <IconifyIcon :icon="item" />
+        </EoIcon>
         <span class="mt-[8px]">{{ item }}</span>
       </span>
     </li>
