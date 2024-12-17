@@ -5,7 +5,8 @@
     "baseUrl": ".",
     "paths": {
       "@echone-ui/components/*": ["./src/*"]
-    }
+    },
+    "types": ["node"]
   },
   "include": ["src"],
   "exclude": ["node_modules"]

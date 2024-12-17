@@ -26,37 +26,13 @@ provide(
 
 <template>
   <Primitive
-    :class="cn('eo-button-group inline-block align-middle', props.class)"
+    :class="
+      cn(
+        '[&>button:first-child]:(rounded-br-none border-r) [&>button:last-child]:(rounded-bl-none border-l) inline-block rounded-tl-none rounded-tr-none align-middle [&>button+button]:ml-0 [&>button:not(:first-child):not(:last-child)]:rounded-none [&>button]:relative [&>button]:float-left',
+        props.class,
+      )
+    "
   >
     <slot></slot>
   </Primitive>
 </template>
-
-<style>
-.eo-button-group > button {
-  position: relative;
-  float: left;
-}
-
-.eo-button-group > button + button {
-  margin-left: 0;
-}
-
-.eo-button-group > button:first-child {
-  @apply border-r;
-
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-}
-
-.eo-button-group > button:last-child {
-  @apply border-l;
-
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-
-.eo-button-group > button:not(:first-child):not(:last-child) {
-  border-radius: 0;
-}
-</style>

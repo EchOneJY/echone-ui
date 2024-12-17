@@ -26,17 +26,9 @@ const style = computed<CSSProperties>(() => {
 <template>
   <i
     :style="style"
-    class="eo-icon relative inline-flex items-center justify-center text-[var(--color)]"
+    class="relative inline-flex h-[1em] w-[1em] items-center justify-center leading-[1em] text-[var(--color)]"
     v-bind="$attrs"
   >
     <slot></slot>
   </i>
 </template>
-
-<style>
-.eo-icon {
-  width: 1em;
-  height: 1em;
-  line-height: 1em;
-}
-</style>
