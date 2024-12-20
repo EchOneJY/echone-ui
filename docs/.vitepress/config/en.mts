@@ -11,7 +11,7 @@ export const en = defineConfig({
       prev: 'Previous Page',
     },
     footer: {
-      copyright: `Copyright © 2020-${new Date().getFullYear()} Echone. All Rights Reserved.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Echone. All Rights Reserved.`,
       message: 'Released under the MIT License.',
     },
     langMenuLabel: 'Language',
@@ -28,29 +28,22 @@ export const en = defineConfig({
       label: 'Navigate',
     },
     returnToTopLabel: 'Back to top',
-    sidebar: {
-      '/en/components/': {
-        base: '/en/components/',
+    sidebar: [
+      {
+        collapsed: false,
+        text: 'Components',
         items: sidebarComponents(),
       },
-      '/en/guide/': { base: '/en/guide/', items: sidebarGuide() },
-    },
+    ],
   },
 });
 
 function sidebarComponents(): DefaultTheme.SidebarItem[] {
   return [
-    { link: '/button', text: 'Button' },
-    { link: '/icon', text: 'Icon' },
-  ];
-}
-
-function sidebarGuide(): DefaultTheme.SidebarItem[] {
-  return [
-    {
-      text: 'Quick Start',
-      items: [{ link: '/guide/quick-start', text: 'Quick Start' }],
-    },
+    { link: '/en/components/button', text: 'Button' },
+    { link: '/en/components/icon', text: 'Icon' },
+    { link: '/en/components/checkbox', text: 'Checkbox' },
+    { link: '/en/components/tooltip', text: 'Tooltip' },
   ];
 }
 
@@ -58,8 +51,8 @@ function nav(): DefaultTheme.NavItem[] {
   return [
     { link: '/', text: 'Home' },
     {
-      activeMatch: '^/components/',
-      link: '/components/button',
+      activeMatch: '^/en/components/',
+      link: '/en/components/button',
       text: 'components',
     },
     {

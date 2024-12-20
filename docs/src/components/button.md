@@ -5,7 +5,7 @@ name: button
 aria: https://www.w3.org/WAI/ARIA/apg/patterns/accordion
 ---
 
-# Button 按钮
+# 按钮
 
 ## 按钮类型
 
@@ -69,9 +69,9 @@ button/group
 
 :::
 
-## Button API
+## API
 
-### Button Attributes
+### Attributes
 
 | Name | Description | Type | Default |
 | --- | --- | --- | --- |

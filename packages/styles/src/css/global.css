@@ -28,24 +28,8 @@
     -moz-osx-font-smoothing: grayscale; */
   }
 
-  #app,
-  body,
-  html {
-    @apply size-full overscroll-none;
-
-    /* scrollbar-gutter: stable; */
-  }
-
   body {
     min-height: 100vh;
-
-    /* pointer-events: auto !important; */
-
-    /* overflow: overlay; */
-
-    /* -webkit-font-smoothing: antialiased; */
-
-    /* -moz-osx-font-smoothing: grayscale; */
   }
 
   a,

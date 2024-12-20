@@ -6,5 +6,6 @@ export interface EoTooltipProps {
   contentClass?: any;
   contentStyle?: StyleValue;
   delayDuration?: number;
+  effect?: 'dark' | 'light';
   side?: TooltipContentProps['side'];
 }

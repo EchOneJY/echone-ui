@@ -11,7 +11,7 @@ export const zh = defineConfig({
       prev: '上一页',
     },
     footer: {
-      copyright: `Copyright © 2020-${new Date().getFullYear()} Echone. All Rights Reserved.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Echone. All Rights Reserved.`,
       message: '基于 MIT 许可发布.',
     },
     langMenuLabel: '多语言',
@@ -28,29 +28,22 @@ export const zh = defineConfig({
       label: '页面导航',
     },
     returnToTopLabel: '回到顶部',
-    sidebar: {
-      '/components/': {
-        base: '/components/',
+    sidebar: [
+      {
+        collapsed: false,
+        text: 'Components',
         items: sidebarComponents(),
       },
-      '/guide/': { base: '/guide/', items: sidebarGuide() },
-    },
+    ],
   },
 });
 
 function sidebarComponents(): DefaultTheme.SidebarItem[] {
   return [
-    { link: '/button', text: '按钮' },
-    { link: '/icon', text: '图标' },
-  ];
-}
-
-function sidebarGuide(): DefaultTheme.SidebarItem[] {
-  return [
-    {
-      text: '快速开始',
-      items: [{ link: '/guide/quick-start', text: '快速开始' }],
-    },
+    { link: '/components/button', text: 'Button 按钮' },
+    { link: '/components/icon', text: 'Icon 图标' },
+    { link: '/components/checkbox', text: 'Checkbox 多选框' },
+    { link: '/components/tooltip', text: 'Tooltip 文字提示' },
   ];
 }
 

@@ -1,6 +1,10 @@
 <script setup lang="ts">
+import type { EoTooltipProps } from './tooltip';
+
 import { CircleHelp } from '@echone-ui/icons';
 import { cn } from '@echone-ui/utils';
+
+import { useForwardProps } from 'radix-vue';
 
 import Tooltip from './tooltip.vue';
 
@@ -8,11 +12,20 @@ defineOptions({
   name: 'EoHelpTooltip',
 });
 
-defineProps<{ triggerClass?: string }>();
+const props = withDefaults(
+  defineProps<{ triggerClass?: string } & EoTooltipProps>(),
+  {
+    delayDuration: 300,
+  },
+);
+
+const { triggerClass, ...rest } = props;
+
+const forwarded = useForwardProps(rest);
 </script>
 
 <template>
-  <Tooltip :delay-duration="300" side="right">
+  <Tooltip v-bind="forwarded">
     <template #trigger>
       <slot name="trigger">
         <CircleHelp

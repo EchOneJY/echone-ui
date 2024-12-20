@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import type { EoTooltipProps } from './tooltip';
 
+import { cn } from '@echone-ui/utils';
+
 import { TooltipArrow } from 'radix-vue';
 
 import {
@@ -15,7 +17,8 @@ defineOptions({
 });
 withDefaults(defineProps<EoTooltipProps>(), {
   delayDuration: 0,
-  side: 'right',
+  effect: 'dark',
+  side: 'top',
 });
 </script>
 
@@ -26,12 +29,23 @@ withDefaults(defineProps<EoTooltipProps>(), {
         <slot name="trigger"></slot>
       </TooltipTrigger>
       <TooltipContent
-        :class="contentClass"
+        :class="
+          cn(
+            'side-content bg-accent rounded-md',
+            effect === 'dark'
+              ? 'text-accent bg-slate-950'
+              : 'bg-accent text-popover-foreground',
+            contentClass,
+          )
+        "
         :side="side"
         :style="contentStyle"
-        class="side-content text-popover-foreground bg-accent rounded-md"
       >
-        <TooltipArrow :height="6" :width="10" class="fill-accent" />
+        <TooltipArrow
+          :class="effect === 'dark' ? 'fill-slate-950' : 'fill-accent'"
+          :height="6"
+          :width="10"
+        />
         <slot></slot>
       </TooltipContent>
     </Tooltip>

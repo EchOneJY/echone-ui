@@ -5,6 +5,8 @@ import type { EoCheckboxProps } from './checkbox';
 
 import { useId } from 'vue';
 
+import { cn } from '@echone-ui/utils';
+
 import { useForwardPropsEmits } from 'radix-vue';
 
 import { Checkbox } from '../../../ui/checkbox';
@@ -23,6 +25,16 @@ const id = useId();
 <template>
   <div class="flex items-center">
     <Checkbox v-bind="forwarded" :id="id" v-model:checked="checked" />
-    <label :for="id" class="ml-2 cursor-pointer text-sm"> <slot></slot> </label>
+    <label
+      :class="
+        cn('ml-2 cursor-pointer text-sm', {
+          'cursor-not-allowed': disabled,
+          'opacity-70': disabled,
+        })
+      "
+      :for="id"
+    >
+      <slot></slot>
+    </label>
   </div>
 </template>

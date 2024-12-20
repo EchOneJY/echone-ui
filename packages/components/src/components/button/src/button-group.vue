@@ -28,7 +28,7 @@ provide(
   <Primitive
     :class="
       cn(
-        '[&>button:first-child]:(rounded-br-none border-r) [&>button:last-child]:(rounded-bl-none border-l) inline-block rounded-tl-none rounded-tr-none align-middle [&>button+button]:ml-0 [&>button:not(:first-child):not(:last-child)]:rounded-none [&>button]:relative [&>button]:float-left',
+        'inline-block align-middle [&>button+button]:ml-0 [&>button:first-child]:rounded-r-none [&>button:first-child]:border-r [&>button:last-child]:rounded-l-none [&>button:last-child]:border-l [&>button:not(:first-child):not(:last-child)]:rounded-none [&>button]:relative [&>button]:float-left',
         props.class,
       )
     "
